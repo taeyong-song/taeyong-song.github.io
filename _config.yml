@@ -6,7 +6,7 @@ title: Tae Yong Song
 first_name: Tae Yong
 last_name: Song
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  For research inquiries, please use the contact information listed in my CV.
 description: Academic website of Tae Yong Song, focusing on building energy systems,
   HVAC modeling and control, building performance simulation,
   physics-informed artificial intelligence, digital twins, and causal inference.
@@ -81,10 +81,10 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
-search_enabled: true
+footer_fixed: false
+search_enabled: false
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
