@@ -15,21 +15,17 @@
 
 \setmainfont[
   Path=C:/Windows/Fonts/,
-  UprightFont=arial.ttf,
-  BoldFont=arialbd.ttf,
-  ItalicFont=ariali.ttf,
-  BoldItalicFont=arialbi.ttf
-]{Arial}
-\newfontfamily\koreanfont[
-  Path=C:/Windows/Fonts/,
-  UprightFont=malgun.ttf,
-  BoldFont=malgunbd.ttf
-]{Malgun Gothic}
+  UprightFont=times.ttf,
+  BoldFont=timesbd.ttf,
+  ItalicFont=timesi.ttf,
+  BoldItalicFont=timesbi.ttf
+]{Times New Roman}
+\newfontfamily\koreanfont{Batang}
 
-\definecolor{navy}{HTML}{17365D}
-\definecolor{slate}{HTML}{44546A}
-\definecolor{rulegray}{HTML}{C9D2DC}
-\definecolor{textgray}{HTML}{2F3640}
+\definecolor{navy}{HTML}{000000}
+\definecolor{slate}{HTML}{000000}
+\definecolor{rulegray}{HTML}{000000}
+\definecolor{textgray}{HTML}{000000}
 
 \color{textgray}
 \setlength{\parindent}{0pt}
@@ -38,16 +34,16 @@
 \urlstyle{same}
 
 \titleformat{\section}
-  {\large\bfseries\color{navy}}
+  {\normalsize\bfseries\color{navy}}
   {}{0pt}{\MakeUppercase}
-  [\vspace{1.5pt}\color{rulegray}\titlerule]
-\titlespacing*{\section}{0pt}{10pt}{5pt}
+  [\vspace{1pt}\color{rulegray}\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
 
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[L]{\footnotesize\color{slate}Tae Yong Song -- Curriculum Vitae}
-\fancyfoot[R]{\footnotesize\color{slate}\thepage\ of \pageref{LastPage}}
+\fancyfoot[L]{\footnotesize Tae Yong Song -- Curriculum Vitae}
+\fancyfoot[R]{\footnotesize \thepage\ of \pageref{LastPage}}
 
 \newcommand{\cvdate}[1]{\textbf{\color{slate}#1}}
 \newcommand{\entry}[3]{%
@@ -72,24 +68,21 @@
 
 \begin{document}
 
-\begin{tabularx}{\textwidth}{@{}X r@{}}
-  {\fontsize{25}{29}\selectfont\bfseries\color{navy}Tae Yong Song} &
+\begin{center}
+  {\fontsize{23}{27}\selectfont\bfseries Tae Yong Song}\\[3pt]
+  {\normalsize Ph.D. Student in Building Science}\\[2pt]
+  {\small Department of Architecture and Architectural Engineering, Seoul National University}\\[4pt]
   {\small
     \href{https://taeyong-song.github.io}{Website}\enspace|\enspace
     \href{https://scholar.google.com/citations?hl=ko\&user=0S4eAMwAAAAJ}{Google Scholar}\enspace|\enspace
     \href{https://github.com/taeyong-song}{GitHub}\enspace|\enspace
     \href{https://www.linkedin.com/search/results/people/?keywords=Tae\%20Yong\%20Song\%20Seoul\%20National\%20University}{LinkedIn}
-  }\\[3pt]
-  {\large\color{slate}Ph.D. Student in Building Science} &
-  {\small\color{slate}Seoul, Republic of Korea}\\
-  {\small Department of Architecture and Architectural Engineering} & \\
-  {\small Seoul National University} &
-\end{tabularx}
+  }
+\end{center}
 
-\vspace{4pt}
-\color{rulegray}\hrule
-\vspace{7pt}
-\color{textgray}
+\vspace{1pt}
+\hrule
+\vspace{5pt}
 
 \section{Research Profile}
 I study building intelligence at the intersection of building physics, performance simulation, and artificial intelligence. My work focuses on models that remain physically meaningful, transferable, and useful for building-energy decisions when operational data are limited.
