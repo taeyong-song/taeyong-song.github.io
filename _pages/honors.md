@@ -3,7 +3,7 @@ layout: page
 title: honors
 permalink: /honors/
 description: Honors, awards, and academic recognition.
-nav: true
+nav: false
 nav_order: 4
 ---
 
