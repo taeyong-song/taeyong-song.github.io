@@ -5,7 +5,7 @@ identity:
   field: Building Science
   affiliation: Seoul National University
   department: Department of Architecture and Architectural Engineering
-  photo: /assets/img/prof_pic.jpg
+  photo:
   cv_pdf: /assets/pdf/taeyong_song_cv.pdf
 links:
   - { label: CV, url: /cv/ }
