@@ -38,15 +38,53 @@ publications:
     selected: true
 
 projects:
-  - title: Physics-Embedded Thermal Modeling
-    summary: Hybrid models that connect RC thermal dynamics with neural networks.
-    description: First-principles equations provide an interpretable thermal backbone, while neural networks learn parameters and residual structure from limited measurements.
-  - title: Data-Efficient Building Models
-    summary: Transfer learning and model adaptation under scarce building data.
-    description: This work studies how knowledge learned from one building or operating condition can support modeling in another while preserving physical plausibility.
-  - title: Causal Models for Retrofit Decisions
-    summary: Simplified models for transparent and robust building-energy decisions.
-    description: This research examines whether simplified, causality-aware models can preserve relationships that matter for retrofit decisions.
+  - title: Virtual Building Modeling and Simulation Framework, and a Causality-Based AR Tool for Net-Zero Building Design Evaluation
+    korean_title: "가상건물 모델링 및 시뮬레이션 프레임워크 구축; 인과성 기반 넷제로 건축물 설계 평가 AR 도구 개발"
+    period: 2026.03.01–2030.12.31
+    sponsor: Korea Institute of Civil Engineering and Building Technology (KICT)
+    summary: Building a virtual-building simulation framework and causal evaluation workflows for net-zero design.
+    description: Contributing to model and simulation framework development, causal performance evaluation logic, and workflows for communicating design outcomes through an AR-based interface.
+    image:
+
+  - title: IDF Model Development for Digital-Twin Energy Simulation
+    korean_title: 디지털트윈 에너지 시뮬레이션용 IDF 모델 구축 연구
+    period: 2025.12.23–2026.01.31
+    sponsor: Eterion (Samsung Electronics)
+    summary: Developing simulation-ready IDF models for digital-twin applications.
+    description: Developed and reviewed EnergyPlus IDF models, simulation inputs, and model-validation workflows for integration with a building-energy digital twin.
+    image:
+
+  - title: LLM Technology for Digital-Twin-Based Building Energy Models
+    korean_title: Digital Twin 기반 건물 에너지 모델 LLM 기술 개발
+    period: 2025.10.27–2026.04.27
+    sponsor: Samsung Electronics
+    summary: Connecting large language models with building-energy modeling workflows.
+    description: Worked on LLM-assisted methods for organizing model information, supporting model generation and interpretation, and linking energy-simulation workflows to a digital-twin environment.
+    image:
+
+  - title: Automated Digital Diagnosis and Design Technologies for Green Remodeling
+    korean_title: 그린리모델링 활성화를 위한 건축물 에너지 디지털 진단 및 설계 자동화 기술개발
+    period: 2022.04.01–2024.12.31
+    sponsor: Korea Agency for Infrastructure Technology Advancement (KAIA)
+    summary: Developing digital diagnosis and automated design methods for building-energy retrofits.
+    description: Contributed to building-energy modeling, data-driven performance diagnosis, and automated evaluation methods for identifying and assessing green-remodeling alternatives.
+    image:
+
+  - title: Greenhouse-Gas Reduction Factors and Emissions Assessment for Building Green Remodeling
+    korean_title: 건물부문 그린리모델링을 통한 온실가스 감축계수 산정 및 배출량 평가 방안 마련
+    period: 2022.12.20–2023.07.31
+    sponsor: Ministry of Land, Infrastructure and Transport (MOLIT)
+    summary: Quantifying greenhouse-gas reductions from building green-remodeling measures.
+    description: Supported building-energy simulation and scenario analysis for estimating reduction factors and evaluating emissions under alternative retrofit conditions.
+    image:
+
+  - title: Data-Driven HVAC Load Prediction and Optimal Air-Handling-Unit Control
+    korean_title: 데이터 기반 공조 부하 예측 모델링 및 공조기 최적제어
+    period: 2023.05.15–2023.11.14
+    sponsor: LG Electronics
+    summary: Developing data-driven load prediction for optimal AHU operation.
+    description: Developed and evaluated HVAC load-prediction models and examined their application to control-oriented air-handling-unit operation.
+    image:
 
 honors:
   - title: Outstanding Presentation Award

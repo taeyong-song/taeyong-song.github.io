@@ -41,8 +41,15 @@ My work connects **physical knowledge** with **data-driven learning** so that bu
 {% for project in profile.projects %}
 ### {{ project.title }}
 
+*Korean title: {{ project.korean_title }}*  
+**{{ project.period }} · {{ project.sponsor }}**
+
 **{{ project.summary }}**  
 {{ project.description }}
+
+{% if project.image %}
+![{{ project.title }}]({{ project.image }})
+{% endif %}
 
 {% endfor %}
 
