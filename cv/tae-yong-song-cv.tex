@@ -1,0 +1,197 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=18mm,top=15mm,bottom=16mm]{geometry}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{ragged2e}
+\usepackage{setspace}
+
+\setmainfont[
+  Path=C:/Windows/Fonts/,
+  UprightFont=arial.ttf,
+  BoldFont=arialbd.ttf,
+  ItalicFont=ariali.ttf,
+  BoldItalicFont=arialbi.ttf
+]{Arial}
+\newfontfamily\koreanfont[
+  Path=C:/Windows/Fonts/,
+  UprightFont=malgun.ttf,
+  BoldFont=malgunbd.ttf
+]{Malgun Gothic}
+
+\definecolor{navy}{HTML}{17365D}
+\definecolor{slate}{HTML}{44546A}
+\definecolor{rulegray}{HTML}{C9D2DC}
+\definecolor{textgray}{HTML}{2F3640}
+
+\color{textgray}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\setstretch{1.04}
+\urlstyle{same}
+
+\titleformat{\section}
+  {\large\bfseries\color{navy}}
+  {}{0pt}{\MakeUppercase}
+  [\vspace{1.5pt}\color{rulegray}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{slate}Tae Yong Song -- Curriculum Vitae}
+\fancyfoot[R]{\footnotesize\color{slate}\thepage\ of \pageref{LastPage}}
+
+\newcommand{\cvdate}[1]{\textbf{\color{slate}#1}}
+\newcommand{\entry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}@{\hspace{8pt}}X@{}}
+    \cvdate{#1} & #2\\[-1pt]
+                & {\small\color{slate}#3}
+  \end{tabularx}\par
+}
+\newcommand{\publication}[3]{%
+  \begin{tabularx}{\textwidth}{@{}p{0.055\textwidth}@{\hspace{7pt}}X@{}}
+    \cvdate{#1} & #2\\[-1pt]
+                & {\small\color{slate}#3}
+  \end{tabularx}\par
+}
+\newcommand{\project}[4]{%
+  \begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}@{\hspace{8pt}}X@{}}
+    \cvdate{#1} & \textbf{#2}\\[-1pt]
+                & {\small\color{slate}#3}\\[-1pt]
+                & {\small #4}
+  \end{tabularx}\par
+}
+
+\begin{document}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  {\fontsize{25}{29}\selectfont\bfseries\color{navy}Tae Yong Song} &
+  {\small
+    \href{https://taeyong-song.github.io}{Website}\enspace|\enspace
+    \href{https://scholar.google.com/citations?hl=ko\&user=0S4eAMwAAAAJ}{Google Scholar}\enspace|\enspace
+    \href{https://github.com/taeyong-song}{GitHub}\enspace|\enspace
+    \href{https://www.linkedin.com/search/results/people/?keywords=Tae\%20Yong\%20Song\%20Seoul\%20National\%20University}{LinkedIn}
+  }\\[3pt]
+  {\large\color{slate}Ph.D. Student in Building Science} &
+  {\small\color{slate}Seoul, Republic of Korea}\\
+  {\small Department of Architecture and Architectural Engineering} & \\
+  {\small Seoul National University} &
+\end{tabularx}
+
+\vspace{4pt}
+\color{rulegray}\hrule
+\vspace{7pt}
+\color{textgray}
+
+\section{Research Profile}
+I study building intelligence at the intersection of building physics, performance simulation, and artificial intelligence. My work focuses on models that remain physically meaningful, transferable, and useful for building-energy decisions when operational data are limited.
+
+\section{Education}
+\entry{2026--present}
+  {\textbf{Ph.D. in Architecture and Architectural Engineering}, Seoul National University}
+  {Building science and building performance simulation}
+\entry{2022--2023}
+  {\textbf{M.S. in Engineering}, Seoul National University}
+  {Thesis: ``Exploring Potential of Transfer Learning in Overcoming Data Scarcity for Building Energy Model''}
+
+\section{Research Interests}
+\begin{itemize}[leftmargin=17pt,itemsep=1.5pt,topsep=1pt]
+  \item Physics-embedded and physics-informed machine learning
+  \item Building energy and thermal performance
+  \item Building performance simulation and reduced-order modeling
+  \item Data-efficient learning, transfer learning, and digital twins
+\end{itemize}
+
+\section{Publications}
+\textbf{\color{slate}International Journal Article}
+
+\publication{2026}
+  {\href{https://doi.org/10.1080/19401493.2025.2542352}{Physics-embedded hybrid modelling approach for room temperature prediction using Siamese neural network and RC model}}
+  {Chul-Hong Park, Seongkwon Cho, \textbf{Tae Yong Song}, Seon-Young Heo, Junu Lee, and Cheol-Soo Park. \textit{Journal of Building Performance Simulation}, 19(2), 277--288.}
+
+\vspace{2pt}
+\textbf{\color{slate}International Conference Papers}
+
+\publication{2026}
+  {Curated Intelligence for Visual Inference and Deterministic Logic toward Automatic BEM}
+  {\textbf{Song, T. Y.}, Kim, J. H., Lee, S. J., Kim, S. K., Park, H. C., Kim, K. J., and Park, C. S. \textit{Proceedings of the 7th Building Simulation Applications Conference}, June 24--26, Bozen-Bolzano, Italy.}
+
+\publication{2024}
+  {\href{https://scholar.google.com/citations?view_op=view_citation\&hl=ko\&user=0S4eAMwAAAAJ\&citation_for_view=0S4eAMwAAAAJ:9yKSN-GCB0IC}{Physics-Informed Hybrid Modeling Approach for Room Temperature Prediction Using an RC Model and Siamese Neural Network}}
+  {Chul-Hong Park, Seongkwon Cho, \textbf{Tae Yong Song}, Seon-Young Heo, and Cheol-Soo Park. \textit{SimBuild 2024}.}
+
+\publication{2023}
+  {\href{https://doi.org/10.26868/25222708.2023.1176}{Causality-based model for decision-making of building energy retrofit}}
+  {Chul-Hong Park, Young-Sub Kim, \textbf{Tae Yong Song}, Seon-Jung Ra, and Cheol-Soo Park. \textit{Building Simulation 2023}, 1433--1438.}
+
+\publication{2023}
+  {\href{https://scholar.google.com/citations?view_op=view_citation\&hl=ko\&user=0S4eAMwAAAAJ\&citation_for_view=0S4eAMwAAAAJ:u5HHmVD_uO8C}{Limitations of Conventional Artificial Neural Network-Based Surrogate Models for Building Energy Retrofit}}
+  {Chul-Hong Park, Young-Sub Kim, Seon-Jung Ra, \textbf{Tae Yong Song}, and Cheol-Soo Park. \textit{ASHRAE Annual Conference}, 683--690.}
+
+\newpage
+\textbf{\color{slate}Domestic Conference Papers}
+
+\publication{2026}
+  {{\koreanfont BIM to BEM 자동화를 위한 맞춤형 AI 기술 개발: LLM, 컴퓨터 비전, 들루네 기하 알고리즘, 최소순환 알고리즘 통합}}
+  {{\koreanfont \textbf{송태용}, 김진홍, 김수경, 박현철, 김경재, 박철수. \textit{대한건축학회 춘계학술발표대회논문집}, 제46권 제1호, 829--830.}}
+
+\publication{2022}
+  {{\koreanfont NODE-GAM을 통한 동적 민감도 분석}}
+  {{\koreanfont \textbf{송태용}, 박철홍, 라선중, 김영섭, 박철수. \textit{한국건축친환경설비학회 추계학술발표대회 논문집}, 181--182.}}
+
+\section{Research Projects}
+\project{2026--2030}
+  {Virtual Building Modeling and Simulation Framework, and a Causality-Based AR Tool for Net-Zero Building Design Evaluation}
+  {Korea Institute of Civil Engineering and Building Technology (KICT)}
+  {Contributing to a virtual-building simulation framework, causal performance evaluation, and AR-based communication of net-zero design outcomes.}
+
+\project{2025--2026}
+  {LLM Technology for Digital-Twin-Based Building Energy Models}
+  {Samsung Electronics}
+  {Developed LLM-assisted workflows for organizing, generating, and interpreting building-energy model information in a digital-twin environment.}
+
+\project{2025--2026}
+  {IDF Model Development for Digital-Twin Energy Simulation}
+  {Eterion (Samsung Electronics)}
+  {Developed and reviewed simulation-ready EnergyPlus IDF models and model-validation workflows for building-energy digital twins.}
+
+\project{2022--2024}
+  {Automated Digital Diagnosis and Design Technologies for Green Remodeling}
+  {Korea Agency for Infrastructure Technology Advancement (KAIA)}
+  {Contributed to building-energy modeling, data-driven performance diagnosis, and automated evaluation of green-remodeling alternatives.}
+
+\project{2023}
+  {Data-Driven HVAC Load Prediction and Optimal Air-Handling-Unit Control}
+  {LG Electronics}
+  {Developed and evaluated HVAC load-prediction models for control-oriented air-handling-unit operation.}
+
+\project{2022--2023}
+  {Greenhouse-Gas Reduction Factors and Emissions Assessment for Building Green Remodeling}
+  {Ministry of Land, Infrastructure and Transport (MOLIT)}
+  {Supported energy simulation and scenario analysis for estimating greenhouse-gas reduction factors under alternative retrofit conditions.}
+
+\section{Teaching Experience}
+\entry{2026--present}
+  {\textbf{Teaching Assistant}, Seoul National University}
+  {Department of Architecture and Architectural Engineering}
+\entry{2023}
+  {\textbf{Teaching Assistant}, Seoul National University}
+  {Department of Architecture and Architectural Engineering}
+
+\section{Honor}
+\entry{2026}
+  {\href{https://taeyong-song.github.io/files/honors/2026-outstanding-presentation-award.pdf}{\textbf{Outstanding Presentation Paper Award}}}
+  {Architectural Institute of Korea Spring Annual Conference, Oral Presentation -- General Division}
+
+\vfill
+{\footnotesize\color{slate}Last updated: July 2026 \hfill Full publication details and project updates: \href{https://taeyong-song.github.io}{taeyong-song.github.io}}
+
+\end{document}
