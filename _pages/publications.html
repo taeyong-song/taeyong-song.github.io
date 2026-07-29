@@ -21,7 +21,7 @@ author_profile: true
       {{ publication.title }}
     {% endif %}
   </h2>
-  <p style="margin: 0 0 .3rem;">{{ publication.authors }}</p>
+  <p style="margin: 0 0 .3rem;">{{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" }}</p>
   <p style="margin: 0;"><em>{{ publication.venue }}</em>, {{ publication.year }}</p>
 </article>
 {% endfor %}

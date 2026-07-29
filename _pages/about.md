@@ -29,7 +29,7 @@ My work connects **physical knowledge** with **data-driven learning** so that bu
 {% assign selected_publications = profile.publications | where: "selected", true %}
 {% for publication in selected_publications %}
 **{% if publication.doi %}[{{ publication.title }}]({{ publication.doi }}){% else %}{{ publication.title }}{% endif %}**  
-{{ publication.authors }}  
+{{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" }}  
 *{{ publication.venue }}*, {{ publication.year }}
 
 {% endfor %}

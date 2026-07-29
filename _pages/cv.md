@@ -30,7 +30,7 @@ Publications
 {% assign publications = profile.publications | sort: "year" | reverse %}
 {% for publication in publications %}
 - **{{ publication.year }} — {% if publication.doi %}[{{ publication.title }}]({{ publication.doi }}){% else %}{{ publication.title }}{% endif %}**  
-  {{ publication.authors }}  
+  {{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" }}  
   *{{ publication.venue }}*
 {% endfor %}
 

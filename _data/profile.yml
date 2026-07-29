@@ -63,14 +63,3 @@ activities:
       - title: Teaching Assistant
         year: 2023
         description: Department of Architecture and Architectural Engineering, Seoul National University.
-  - category: Research Presentations
-    items:
-      - title: SimBuild 2024
-        year: 2024
-        description: Physics-informed hybrid modeling for room-temperature prediction.
-      - title: Building Simulation 2023
-        year: 2023
-        description: Causality-based modeling for building-energy retrofit decisions.
-      - title: ASHRAE Annual Conference
-        year: 2023
-        description: Limitations of conventional ANN-based surrogate models for building-energy retrofit.
