@@ -76,6 +76,7 @@ publications:
 
 projects:
   - title: Virtual Building Modeling and Simulation Framework, and a Causality-Based AR Tool for Net-Zero Building Design Evaluation
+    sort_date: 2026-03-01
     period: 2026.03.01–2030.12.31
     sponsor: Korea Institute of Civil Engineering and Building Technology (KICT)
     summary: Building a virtual-building simulation framework and causal evaluation workflows for net-zero design.
@@ -83,6 +84,7 @@ projects:
     image:
 
   - title: IDF Model Development for Digital-Twin Energy Simulation
+    sort_date: 2025-12-23
     period: 2025.12.23–2026.01.31
     sponsor: Eterion (Samsung Electronics)
     summary: Developing simulation-ready IDF models for digital-twin applications.
@@ -90,6 +92,7 @@ projects:
     image:
 
   - title: LLM Technology for Digital-Twin-Based Building Energy Models
+    sort_date: 2025-10-27
     period: 2025.10.27–2026.04.27
     sponsor: Samsung Electronics
     summary: Connecting large language models with building-energy modeling workflows.
@@ -97,6 +100,7 @@ projects:
     image:
 
   - title: Automated Digital Diagnosis and Design Technologies for Green Remodeling
+    sort_date: 2022-04-01
     period: 2022.04.01–2024.12.31
     sponsor: Korea Agency for Infrastructure Technology Advancement (KAIA)
     summary: Developing digital diagnosis and automated design methods for building-energy retrofits.
@@ -104,6 +108,7 @@ projects:
     image:
 
   - title: Greenhouse-Gas Reduction Factors and Emissions Assessment for Building Green Remodeling
+    sort_date: 2022-12-20
     period: 2022.12.20–2023.07.31
     sponsor: Ministry of Land, Infrastructure and Transport (MOLIT)
     summary: Quantifying greenhouse-gas reductions from building green-remodeling measures.
@@ -111,6 +116,7 @@ projects:
     image:
 
   - title: Data-Driven HVAC Load Prediction and Optimal Air-Handling-Unit Control
+    sort_date: 2023-05-15
     period: 2023.05.15–2023.11.14
     sponsor: LG Electronics
     summary: Developing data-driven load prediction for optimal AHU operation.
