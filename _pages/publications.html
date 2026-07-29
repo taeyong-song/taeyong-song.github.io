@@ -1,0 +1,27 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% assign profile = site.data.profile %}
+
+<p>Publication details and citation updates are also available on
+  <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>.
+</p>
+
+{% assign publications = profile.publications | sort: "year" | reverse %}
+{% for publication in publications %}
+<article style="margin-bottom: 2rem;">
+  <h2 style="margin-bottom: .35rem; font-size: 1.15rem;">
+    {% if publication.doi %}
+      <a href="{{ publication.doi }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+    {% else %}
+      {{ publication.title }}
+    {% endif %}
+  </h2>
+  <p style="margin: 0 0 .3rem;">{{ publication.authors }}</p>
+  <p style="margin: 0;"><em>{{ publication.venue }}</em>, {{ publication.year }}</p>
+</article>
+{% endfor %}

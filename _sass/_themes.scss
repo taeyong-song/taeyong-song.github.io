@@ -1,4 +1,104 @@
-:root{--global-theme-color:#17365d;--global-hover-color:#0f2744;--global-text-color:#202733;--global-bg-color:#f8f9fb;--global-footer-bg-color:#101923;--global-card-bg-color:#fff;--global-divider-color:rgba(23,54,93,.16)}html[data-theme="dark"]{--global-theme-color:#8fb2d9;--global-hover-color:#b5cce5;--global-text-color:#e8edf3;--global-bg-color:#10151c;--global-card-bg-color:#161e28;--global-divider-color:rgba(143,178,217,.2)}
-.personal-home{display:grid;grid-template-columns:minmax(230px,300px) minmax(0,1fr);gap:clamp(3rem,7vw,7rem);align-items:start}.personal-profile{position:sticky;top:6rem;padding-bottom:3rem}.personal-profile__photo,.personal-profile__placeholder{width:100%;aspect-ratio:4/5;margin-bottom:1.5rem;border-radius:3px}.personal-profile__photo{object-fit:cover}.personal-profile__placeholder{display:grid;place-items:end start;padding:1.5rem;background:linear-gradient(145deg,#16283d,#526c87);color:#fff;font-size:2.1rem;font-weight:700;letter-spacing:-.04em}.personal-profile__role{margin-bottom:.7rem;color:var(--global-theme-color);font-size:.78rem;font-weight:700;letter-spacing:.04em}.personal-profile h1{margin:0 0 1rem;font-size:clamp(2.1rem,4vw,3.4rem);line-height:1;letter-spacing:-.05em}.personal-profile__affiliation,.personal-profile__bio{color:var(--global-text-color-light)}.personal-profile__bio{margin-top:1.5rem;font-size:.92rem}.personal-profile__links{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.5rem;font-size:.88rem}.personal-record{min-width:0}.record-intro{padding:1rem 0 5rem}.record-intro h2{max-width:750px;margin:0 0 1.5rem;font-size:clamp(2.6rem,6vw,5.3rem);line-height:.98;letter-spacing:-.055em}.record-intro>p:last-child{max-width:680px;font-size:1.1rem}
-.home-section{padding:3.5rem 0;border-top:1px solid var(--global-divider-color)}.home-section__label{margin-bottom:1.25rem;color:var(--global-theme-color);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.home-section>h2{margin:0 0 2rem;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.035em}.interest-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem 2rem}.interest-grid>div{padding-top:1rem;border-top:1px solid var(--global-divider-color)}.interest-grid span,.home-projects article>span{color:var(--global-theme-color);font-size:.75rem;font-weight:700}.home-projects{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.home-projects article{padding-top:1.25rem;border-top:3px solid var(--global-theme-color)}.publication-row{display:grid;grid-template-columns:6rem 1fr;gap:1rem;padding:1.2rem 0;border-top:1px solid var(--global-divider-color)}.publication-row>span{color:var(--global-theme-color);font-weight:700}.publication-row p{margin:.25rem 0 0}.editable-list__summary{color:var(--global-theme-color);font-weight:600}.section-link{margin-top:1.5rem}
-@media(max-width:850px){.personal-home{grid-template-columns:1fr;gap:1rem}.personal-profile{position:static;display:grid;grid-template-columns:120px 1fr;gap:1.5rem}.personal-profile__placeholder,.personal-profile__photo{grid-row:1/span 5;margin:0}.personal-profile__bio,.personal-profile__links{grid-column:1/-1}.interest-grid{grid-template-columns:1fr}}@media(max-width:576px){.home-projects,.publication-row{grid-template-columns:1fr}}
+/* ==========================================================================
+   SHARED THEME SETTINGS
+   ========================================================================== */
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+/* Used to set the size for <em> */
+$doc-font-size              : 16;
+
+/* Paragraph indention */
+$paragraph-indent           : false; // true, false (default)
+$indent-var                 : 1.3em;
+
+/* System typefaces */
+$serif                      : Georgia, Times, serif;
+$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+
+/* Sans serif typefaces */
+$sans-serif-narrow          : $sans-serif;
+$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
+
+/* Serif typefaces */
+$georgia                    : Georgia, serif;
+$times                      : Times, serif;
+$bodoni                     : "Bodoni MT", serif;
+$calisto                    : "Calisto MT", serif;
+$garamond                   : Garamond, serif;
+
+/* Type scale */
+$type-size-1                : 2.441em;  // ~39.056px
+$type-size-2                : 1.953em;  // ~31.248px
+$type-size-3                : 1.563em;  // ~25.008px
+$type-size-4                : 1.25em;   // ~20px
+$type-size-5                : 1em;      // ~16px
+$type-size-6                : 0.75em;   // ~12px
+$type-size-7                : 0.6875em; // ~11px
+$type-size-8                : 0.625em;  // ~10px
+
+$global-font-family         : $sans-serif;
+$header-font-family         : $sans-serif;
+$caption-font-family        : $serif;
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+@include breakpoint-set("to ems", true);
+
+$small                      : 600px !default;
+$medium                     : 768px !default;
+$medium-wide                : 900px !default;
+$large                      : 925px !default;
+$x-large                    : 1280px !default;
+
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+$right-sidebar-width-narrow : auto;
+$right-sidebar-width        : auto;
+$right-sidebar-width-wide   : auto;
+
+$susy: (
+    columns: 12,
+    column-width: 120px,
+    gutters: 1/4,
+    math: fluid,
+    output: float,
+    gutter-position: after,
+    container: $large,
+    global-box-sizing: border-box,
+);
+
+/* ==========================================================================
+   BRAND COLORS
+   ========================================================================== */
+
+$behance-color              : #1769FF;
+$bluesky-color              : #1184fe;
+$dribbble-color             : #ea4c89;
+$facebook-color             : #3b5998;
+$flickr-color               : #ff0084;
+$foursquare-color           : #0072b1;
+$google-plus-color          : #dd4b39;
+$instagram-color            : #517fa4;
+$kaggle-color               : #20c0ff;
+$lastfm-color               : #d51007;
+$linkedin-color             : #007bb6;
+$mastodon-color             : #6364ff;
+$orcid-color                : #a6ce39;
+$pinterest-color            : #cb2027;
+$rss-color                  : #fa9b39;
+$soundcloud-color           : #ff3300;
+$stackoverflow-color        : #fe7a15;
+$tumblr-color               : #32506d;
+$twitter-color              : #55acee;
+$vimeo-color                : #1ab7ea;
+$vine-color                 : #00bf8f;
+$youtube-color              : #bb0000;
+$xing-color                 : #006567;
+   
