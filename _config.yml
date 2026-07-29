@@ -238,12 +238,6 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
-  # Downloadable files are linked from their relevant pages and should not
-  # appear as standalone URLs in the XML sitemap.
-  - scope:
-      path: "files/"
-    values:
-      sitemap: false
   # _posts
   - scope:
       path: ""
@@ -317,7 +311,6 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 
@@ -326,7 +319,6 @@ whitelist:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 
