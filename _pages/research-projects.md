@@ -17,7 +17,6 @@ My research projects connect building simulation, digital twins, causal evaluati
 
   ## {{ project.title }}
 
-  *Korean title: {{ project.korean_title }}*  
   **{{ project.period }} · {{ project.sponsor }}**
 
   **{{ project.summary }}**  
