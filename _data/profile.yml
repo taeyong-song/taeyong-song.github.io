@@ -25,17 +25,49 @@ publications:
     year: 2026
     doi: https://doi.org/10.1080/19401493.2025.2542352
     selected: true
+    category: international_journal
   - title: Physics-Informed Hybrid Modeling Approach for Room Temperature Prediction Using an RC Model and Siamese Neural Network
     authors: Chul-Hong Park, Seongkwon Cho, Tae Yong Song, Seon-Young Heo, and Cheol-Soo Park
     venue: SimBuild 2024
     year: 2024
     selected: true
+    category: international_conference
   - title: Causality-based model for decision-making of building energy retrofit
     authors: Chul-Hong Park, Young-Sub Kim, Tae Yong Song, Seon-Jung Ra, and Cheol-Soo Park
     venue: Building Simulation 2023, 1433–1438
     year: 2023
     doi: https://doi.org/10.26868/25222708.2023.1176
     selected: true
+    category: international_conference
+
+  - title: Limitations of Conventional Artificial Neural Network-Based Surrogate Models for Building Energy Retrofit
+    authors: Chul-Hong Park, Young-Sub Kim, Seon-Jung Ra, Tae Yong Song, and Cheol-Soo Park
+    venue: ASHRAE Annual Conference, 683–690
+    year: 2023
+    selected: false
+    category: international_conference
+
+  - title: Curated Intelligence for Visual Inference and Deterministic Logic toward Automatic BEM
+    authors: Song, T. Y., Kim, J. H., Lee, S. J., Kim, S. K., Park, H. C., Kim, K. J., and Park, C. S.
+    venue: Proceedings of the 7th Building Simulation Applications Conference, pp. ??–??, June 24–26, Bozen-Bolzano, Italy
+    year: 2026
+    selected: false
+    category: international_conference
+
+  - title: "BIM to BEM 자동화를 위한 맞춤형 AI 기술 개발: LLM, 컴퓨터 비전, 들루네 기하 알고리즘, 최소순환 알고리즘 통합"
+    authors: 송태용, 김진홍, 김수경, 박현철, 김경재, 박철수
+    venue: 대한건축학회 춘계학술발표대회논문집, 제46권 제1호, pp. x–x, 2026년 4월 28–30일, AT센터, 서울
+    year: 2026
+    selected: false
+    category: domestic_conference
+    award: "★ Outstanding Presentation Award"
+
+  - title: NODE-GAM을 통한 동적 민감도 분석
+    authors: 송태용, 박철홍, 라선중, 김영섭, 박철수
+    venue: 한국건축친환경설비학회 추계학술발표대회 논문집, pp. 181–182, 2022년 11월 25일, 연세대학교, 서울
+    year: 2022
+    selected: false
+    category: domestic_conference
 
 projects:
   - title: Virtual Building Modeling and Simulation Framework, and a Causality-Based AR Tool for Net-Zero Building Design Evaluation

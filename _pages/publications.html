@@ -11,17 +11,32 @@ author_profile: true
   <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>.
 </p>
 
-{% assign publications = profile.publications | sort: "year" | reverse %}
-{% for publication in publications %}
-<article style="margin-bottom: 2rem;">
-  <h2 style="margin-bottom: .35rem; font-size: 1.15rem;">
-    {% if publication.doi %}
-      <a href="{{ publication.doi }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+{% assign categories = "international_journal|International Journal,domestic_journal|Domestic Journal,international_conference|International Conference,domestic_conference|Domestic Conference" | split: "," %}
+
+{% for category_pair in categories %}
+  {% assign category = category_pair | split: "|" %}
+  {% assign category_key = category[0] %}
+  {% assign category_title = category[1] %}
+  {% assign entries = profile.publications | where: "category", category_key | sort: "year" | reverse %}
+
+  <section class="publication-category">
+    <h2>{{ category_title }}</h2>
+    {% if entries.size > 0 %}
+      {% for publication in entries %}
+      <article style="margin-bottom: 1.8rem;">
+        <h3 style="margin-bottom: .35rem; font-size: 1.08rem;">
+          {% if publication.doi %}
+            <a href="{{ publication.doi }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+          {% else %}
+            {{ publication.title }}
+          {% endif %}
+        </h3>
+        <p style="margin: 0 0 .3rem;">{{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" | replace: "Song, T. Y.", "<strong>Song, T. Y.</strong>" | replace: "송태용", "<strong>송태용</strong>" }}</p>
+        <p style="margin: 0;"><em>{{ publication.venue }}</em>, {{ publication.year }}{% if publication.award %} · <strong style="color:#b26a00;">{{ publication.award }}</strong>{% endif %}</p>
+      </article>
+      {% endfor %}
     {% else %}
-      {{ publication.title }}
+      <p><em>No entries yet.</em></p>
     {% endif %}
-  </h2>
-  <p style="margin: 0 0 .3rem;">{{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" }}</p>
-  <p style="margin: 0;"><em>{{ publication.venue }}</em>, {{ publication.year }}</p>
-</article>
+  </section>
 {% endfor %}

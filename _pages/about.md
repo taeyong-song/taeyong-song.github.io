@@ -38,20 +38,9 @@ My work connects **physical knowledge** with **data-driven learning** so that bu
 
 ## Research projects
 
-{% for project in profile.projects %}
-### {{ project.title }}
+My project portfolio includes building-energy digital twins, automated BEM workflows, causal net-zero design evaluation, green-remodeling diagnostics, and HVAC prediction and control.
 
-*Korean title: {{ project.korean_title }}*  
-**{{ project.period }} · {{ project.sponsor }}**
-
-**{{ project.summary }}**  
-{{ project.description }}
-
-{% if project.image %}
-![{{ project.title }}]({{ project.image }})
-{% endif %}
-
-{% endfor %}
+[View all research projects →](/research-projects/)
 
 ## Education
 
