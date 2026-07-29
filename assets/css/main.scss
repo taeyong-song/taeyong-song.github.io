@@ -291,6 +291,13 @@
   }
 }
 
+/* Keep portrait photographs circular at every responsive size. */
+.author__avatar img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
 /* Research projects: chronological numbered records */
 .research-project-list {
   margin-top: 2.5rem;

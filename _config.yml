@@ -23,7 +23,7 @@ repository               : "taeyong-song/taeyong-song.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.svg"
+  avatar           : "profile.jpg"
   name             : "Tae Yong Song"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student in the Department of Architecture and Architectural Engineering at Seoul National University (SNU)."
