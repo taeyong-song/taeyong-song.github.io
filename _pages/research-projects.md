@@ -10,16 +10,16 @@ author_profile: true
 My research projects connect building simulation, digital twins, causal evaluation, and data-driven intelligence with practical design and operational problems.
 
 {% for project in profile.projects %}
-<article class="research-project-entry">
-  {% if project.image %}
-  <img src="{{ project.image }}" alt="{{ project.title }}">
-  {% endif %}
+<article class="research-project-entry" markdown="1">
+{% if project.image %}
+<img src="{{ project.image }}" alt="{{ project.title }}">
+{% endif %}
 
-  ## {{ project.title }}
+## {{ project.title }}
 
-  **{{ project.period }} · {{ project.sponsor }}**
+**{{ project.period }} · {{ project.sponsor }}**
 
-  **{{ project.summary }}**  
-  {{ project.description }}
+**{{ project.summary }}**  
+{{ project.description }}
 </article>
 {% endfor %}
