@@ -143,8 +143,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "tae-yong-song-og.png"
+og_description           : "Tae Yong Song — Ph.D. student in Building Science at Seoul National University."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -176,6 +176,7 @@ exclude:
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
+  - social-preview
   - CHANGELOG
   - Capfile
   - config
