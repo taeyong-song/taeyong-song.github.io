@@ -40,7 +40,11 @@ Activities
 {% for group in profile.activities %}
 ### {{ group.category }}
 {% for item in group.items %}
+{% if group.category == "Research Presentations" %}
+- {{ item.authors_html }} ({{ item.year }}). **{{ item.title }}**. *{{ item.venue }}*, {{ item.details }}.{% if item.award %} **{{ item.award }}**{% endif %}
+{% else %}
 - **{{ item.year }} — {{ item.title }}:** {{ item.description }}
+{% endif %}
 {% endfor %}
 {% endfor %}
 

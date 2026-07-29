@@ -66,7 +66,11 @@ My work connects **physical knowledge** with **data-driven learning** so that bu
 {% for group in profile.activities %}
 ### {{ group.category }}
 {% for item in group.items %}
+{% if group.category == "Research Presentations" %}
+- {{ item.authors_html }} ({{ item.year }}). **{{ item.title }}**. *{{ item.venue }}*, {{ item.details }}.{% if item.award %} <strong style="color:#b26a00;">{{ item.award }}</strong>{% endif %}
+{% else %}
 - **{{ item.year }} — {{ item.title }}:** {{ item.description }}
+{% endif %}
 {% endfor %}
 {% endfor %}
 

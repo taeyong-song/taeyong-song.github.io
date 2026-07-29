@@ -86,11 +86,7 @@ projects:
     description: Developed and evaluated HVAC load-prediction models and examined their application to control-oriented air-handling-unit operation.
     image:
 
-honors:
-  - title: Outstanding Presentation Award
-    organization:
-    year: April 2026
-    certificate_url: /files/honors/2026-outstanding-presentation-award.pdf
+honors: []
 
 activities:
   - category: Teaching
@@ -101,3 +97,23 @@ activities:
       - title: Teaching Assistant
         year: 2023
         description: Department of Architecture and Architectural Engineering, Seoul National University.
+  - category: Research Presentations
+    items:
+      - year: 2026
+        title: Curated Intelligence for Visual Inference and Deterministic Logic toward Automatic BEM
+        authors_html: "Song, T. Y., Kim, J. H., Lee, S. J., Kim, S. K., Park, H. C., Kim, K. J., &amp; <strong>Park, C. S.</strong>"
+        venue: Proceedings of the 7th Building Simulation Applications Conference
+        details: "pp. ??–??, June 24–26, Bozen-Bolzano, Italy"
+
+      - year: 2026
+        title: "BIM to BEM 자동화를 위한 맞춤형 AI 기술 개발: LLM, 컴퓨터 비전, 들루네 기하 알고리즘, 최소순환 알고리즘 통합"
+        authors_html: "송태용, 김진홍, 김수경, 박현철, 김경재, 박철수"
+        venue: 대한건축학회 춘계학술발표대회논문집, 제46권 제1호
+        details: "pp. x–x, 2026년 4월 28–30일, AT센터, 서울"
+        award: "★ Outstanding Presentation Award"
+
+      - year: 2022
+        title: NODE-GAM을 통한 동적 민감도 분석
+        authors_html: "송태용, 박철홍, 라선중, 김영섭, 박철수"
+        venue: 한국건축친환경설비학회 추계학술발표대회 논문집
+        details: "pp. 181–182, 2022년 11월 25일, 연세대학교, 서울"
