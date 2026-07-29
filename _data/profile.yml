@@ -56,7 +56,7 @@ publications:
 
   - title: "BIM to BEM 자동화를 위한 맞춤형 AI 기술 개발: LLM, 컴퓨터 비전, 들루네 기하 알고리즘, 최소순환 알고리즘 통합"
     authors: 송태용, 김진홍, 김수경, 박현철, 김경재, 박철수
-    venue: 대한건축학회 춘계학술발표대회논문집, 제46권 제1호, pp. x–x, 2026년 4월 28–30일, AT센터, 서울
+    venue: 대한건축학회 춘계학술발표대회논문집, 제46권 제1호, pp. 829–830 (2 pages), 2026년 4월 28–30일, AT센터, 서울
     year: 2026
     selected: false
     category: domestic_conference
@@ -135,7 +135,7 @@ activities:
         title: "BIM to BEM 자동화를 위한 맞춤형 AI 기술 개발: LLM, 컴퓨터 비전, 들루네 기하 알고리즘, 최소순환 알고리즘 통합"
         authors_html: "송태용, 김진홍, 김수경, 박현철, 김경재, 박철수"
         venue: 대한건축학회 춘계학술발표대회논문집, 제46권 제1호
-        details: "pp. x–x, 2026년 4월 28–30일, AT센터, 서울"
+        details: "pp. 829–830 (2 pages), 2026년 4월 28–30일, AT센터, 서울"
         award: "★ Outstanding Presentation Award"
 
       - year: 2022
