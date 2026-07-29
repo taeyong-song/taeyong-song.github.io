@@ -26,7 +26,7 @@ My work connects **physical knowledge** with **data-driven learning** so that bu
 
 ## Selected publications
 
-{% assign selected_publications = profile.publications | where: "selected", true %}
+    {% assign selected_publications = profile.publications | where: "category", "international_journal" %}
 {% for publication in selected_publications %}
 **{% if publication.doi %}[{{ publication.title }}]({{ publication.doi }}){% else %}{{ publication.title }}{% endif %}**  
 {{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" }}  

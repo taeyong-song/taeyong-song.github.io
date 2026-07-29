@@ -32,8 +32,12 @@ author_profile: true
         <div class="publication-record__year">{{ publication.year }}</div>
         <div class="publication-record__body">
           <h3 class="publication-record__title">
-            {% if publication.doi %}
+            {% if publication.scholar_url and publication.category contains "conference" %}
+              <a href="{{ publication.scholar_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+            {% elsif publication.doi %}
               <a href="{{ publication.doi }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+            {% elsif publication.scholar_url %}
+              <a href="{{ publication.scholar_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
             {% else %}
               {{ publication.title }}
             {% endif %}

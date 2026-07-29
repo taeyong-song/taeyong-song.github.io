@@ -24,6 +24,7 @@ publications:
     venue: Journal of Building Performance Simulation, 19(2), 277–288
     year: 2026
     doi: https://doi.org/10.1080/19401493.2025.2542352
+    scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:2osOgNQ5qMEC
     selected: true
     category: international_journal
   - title: Physics-Informed Hybrid Modeling Approach for Room Temperature Prediction Using an RC Model and Siamese Neural Network
@@ -32,6 +33,7 @@ publications:
     year: 2024
     selected: true
     category: international_conference
+    scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:9yKSN-GCB0IC
   - title: Causality-based model for decision-making of building energy retrofit
     authors: Chul-Hong Park, Young-Sub Kim, Tae Yong Song, Seon-Jung Ra, and Cheol-Soo Park
     venue: Building Simulation 2023, 1433–1438
@@ -39,6 +41,7 @@ publications:
     doi: https://doi.org/10.26868/25222708.2023.1176
     selected: true
     category: international_conference
+    scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:d1gkVwhDpl0C
 
   - title: Limitations of Conventional Artificial Neural Network-Based Surrogate Models for Building Energy Retrofit
     authors: Chul-Hong Park, Young-Sub Kim, Seon-Jung Ra, Tae Yong Song, and Cheol-Soo Park
@@ -46,6 +49,7 @@ publications:
     year: 2023
     selected: false
     category: international_conference
+    scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:u5HHmVD_uO8C
 
   - title: Curated Intelligence for Visual Inference and Deterministic Logic toward Automatic BEM
     authors: Song, T. Y., Kim, J. H., Lee, S. J., Kim, S. K., Park, H. C., Kim, K. J., and Park, C. S.
@@ -61,6 +65,7 @@ publications:
     selected: false
     category: domestic_conference
     award: "★ Outstanding Presentation Award"
+    scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:u-x6o8ySG0sC
 
   - title: NODE-GAM을 통한 동적 민감도 분석
     authors: 송태용, 박철홍, 라선중, 김영섭, 박철수
