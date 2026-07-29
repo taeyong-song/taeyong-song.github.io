@@ -119,3 +119,130 @@
     display: block;
   }
 }
+
+/* Publications: clear category → record → metadata hierarchy */
+.publication-groups {
+  margin-top: 2.25rem;
+}
+
+.publication-category {
+  margin: 0 0 4rem;
+}
+
+.publication-category__header {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr) auto;
+  gap: 0.7rem;
+  align-items: baseline;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid var(--global-text-color);
+}
+
+.publication-category__header h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.38rem;
+  line-height: 1.2;
+}
+
+.publication-category__index,
+.publication-category__count {
+  color: var(--global-text-color-light);
+  font-family: $monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.publication-category__count {
+  min-width: 1.6rem;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  text-align: center;
+}
+
+.publication-record {
+  display: grid;
+  grid-template-columns: 3.35rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.publication-record__year {
+  align-self: start;
+  margin-top: 0.12rem;
+  padding: 0.24rem 0.35rem;
+  border-radius: 3px;
+  background: var(--global-code-background-color);
+  color: var(--global-text-color-light);
+  font-family: $monospace;
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.publication-record__title {
+  margin: 0 0 0.55rem;
+  font-size: 1.03rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.publication-record__title a {
+  text-decoration: none;
+}
+
+.publication-record__authors {
+  margin: 0 0 0.35rem !important;
+  color: var(--global-text-color);
+  font-size: 0.88rem !important;
+  line-height: 1.55;
+}
+
+.publication-record__venue {
+  margin: 0 !important;
+  color: var(--global-text-color-light);
+  font-size: 0.84rem !important;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.publication-record__award {
+  display: inline-block;
+  margin-left: 0.35rem;
+  color: #9a6200;
+  font-style: normal;
+}
+
+.publication-category--empty {
+  margin-bottom: 2.5rem;
+  opacity: 0.65;
+}
+
+.publication-category--empty .publication-category__header {
+  border-bottom-width: 1px;
+}
+
+.publication-category__empty {
+  margin: 0.75rem 0 0 3rem;
+  color: var(--global-text-color-light);
+  font-size: 0.82rem !important;
+  font-style: italic;
+}
+
+@media screen and (max-width: 599px) {
+  .publication-category {
+    margin-bottom: 3rem;
+  }
+
+  .publication-record {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+
+  .publication-record__year {
+    width: max-content;
+  }
+}

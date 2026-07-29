@@ -13,30 +13,39 @@ author_profile: true
 
 {% assign categories = "international_journal|International Journal,domestic_journal|Domestic Journal,international_conference|International Conference,domestic_conference|Domestic Conference" | split: "," %}
 
+<div class="publication-groups">
 {% for category_pair in categories %}
   {% assign category = category_pair | split: "|" %}
   {% assign category_key = category[0] %}
   {% assign category_title = category[1] %}
   {% assign entries = profile.publications | where: "category", category_key | sort: "year" | reverse %}
 
-  <section class="publication-category">
-    <h2>{{ category_title }}</h2>
+  <section class="publication-category{% if entries.size == 0 %} publication-category--empty{% endif %}">
+    <header class="publication-category__header">
+      <span class="publication-category__index">0{{ forloop.index }}</span>
+      <h2>{{ category_title }}</h2>
+      <span class="publication-category__count">{{ entries.size }}</span>
+    </header>
     {% if entries.size > 0 %}
       {% for publication in entries %}
-      <article style="margin-bottom: 1.8rem;">
-        <h3 style="margin-bottom: .35rem; font-size: 1.08rem;">
-          {% if publication.doi %}
-            <a href="{{ publication.doi }}" target="_blank" rel="noopener">{{ publication.title }}</a>
-          {% else %}
-            {{ publication.title }}
-          {% endif %}
-        </h3>
-        <p style="margin: 0 0 .3rem;">{{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" | replace: "Song, T. Y.", "<strong>Song, T. Y.</strong>" | replace: "송태용", "<strong>송태용</strong>" }}</p>
-        <p style="margin: 0;"><em>{{ publication.venue }}</em>, {{ publication.year }}{% if publication.award %} · <strong style="color:#b26a00;">{{ publication.award }}</strong>{% endif %}</p>
+      <article class="publication-record">
+        <div class="publication-record__year">{{ publication.year }}</div>
+        <div class="publication-record__body">
+          <h3 class="publication-record__title">
+            {% if publication.doi %}
+              <a href="{{ publication.doi }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+            {% else %}
+              {{ publication.title }}
+            {% endif %}
+          </h3>
+          <p class="publication-record__authors">{{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" | replace: "Song, T. Y.", "<strong>Song, T. Y.</strong>" | replace: "송태용", "<strong>송태용</strong>" }}</p>
+          <p class="publication-record__venue">{{ publication.venue }}{% if publication.award %} <strong class="publication-record__award">{{ publication.award }}</strong>{% endif %}</p>
+        </div>
       </article>
       {% endfor %}
     {% else %}
-      <p><em>No entries yet.</em></p>
+      <p class="publication-category__empty">No entries yet.</p>
     {% endif %}
   </section>
 {% endfor %}
+</div>
