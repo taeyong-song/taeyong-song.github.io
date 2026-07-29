@@ -1,62 +1,73 @@
-# ============================================================
 # EDIT THIS FILE ONLY
-# 아래 목록의 문구를 바꾸거나 항목을 복사/삭제하면 홈페이지에 자동 반영됩니다.
-# 들여쓰기(공백 2칸)는 유지하세요.
-# ============================================================
-
 identity:
   name: Tae Yong Song
   role: Ph.D. student
   field: Building Science
   affiliation: Seoul National University
   department: Department of Architecture and Architectural Engineering
-  photo: prof_pic.jpg
-
+  photo: /assets/img/prof_pic.jpg
+  cv_pdf: /assets/pdf/taeyong_song_cv.pdf
 links:
-  - label: CV
-    url: /cv/
-  - label: Google Scholar
-    url: https://scholar.google.com/citations?view_op=search_authors&mauthors=Tae+Yong+Song+Seoul+National+University
-  - label: LinkedIn
-    url: https://www.linkedin.com/search/results/people/?keywords=Tae%20Yong%20Song%20Seoul%20National%20University
-
+  - { label: CV, url: /cv/ }
+  - { label: Google Scholar, url: "https://scholar.google.com/citations?view_op=search_authors&mauthors=Tae+Yong+Song+Seoul+National+University" }
+  - { label: LinkedIn, url: "https://www.linkedin.com/search/results/people/?keywords=Tae%20Yong%20Song%20Seoul%20National%20University" }
 about:
   - I am a Ph.D. student in the Department of Architecture and Architectural Engineering at Seoul National University. My research sits at the intersection of building physics, building performance simulation, and artificial intelligence.
-  - I am interested in models that are not only accurate, but also physically meaningful and transferable when building data are scarce. My current work explores physics-embedded learning, reduced-order thermal models, and data-efficient methods for understanding and predicting building behavior.
-
+  - I am interested in models that are not only accurate, but also physically meaningful and transferable when building data are scarce.
 research_interests:
   - Physics-embedded and physics-informed machine learning
   - Building energy and thermal performance
   - Building performance simulation and reduced-order modeling
   - Data-efficient learning, transfer learning, and digital twins
-
+education:
+  - degree: Ph.D. in Architecture and Architectural Engineering
+    institution: Seoul National University
+    period: 2024–Present
+    description: Building science and building performance simulation
+  - degree: M.S. in Engineering
+    institution: Seoul National University
+    period: 2024
+    description: "Thesis: Exploring Potential of Transfer Learning in Overcoming Data Scarcity for Building Energy Model"
+publications:
+  - title: Physics-embedded hybrid modelling approach for room temperature prediction using Siamese neural network and RC model
+    authors: Chul-Hong Park, Seongkwon Cho, Tae Yong Song, Seon-Young Heo, Junu Lee, and Cheol-Soo Park
+    venue: Journal of Building Performance Simulation, 19(2), 277–288
+    year: 2026
+    doi: https://doi.org/10.1080/19401493.2025.2542352
+    selected: true
+  - title: Physics-Informed Hybrid Modeling Approach for Room Temperature Prediction Using an RC Model and Siamese Neural Network
+    authors: Chul-Hong Park, Seongkwon Cho, Tae Yong Song, Seon-Young Heo, and Cheol-Soo Park
+    venue: SimBuild 2024
+    year: 2024
+    selected: true
+  - title: Causality-based model for decision-making of building energy retrofit
+    authors: Chul-Hong Park, Young-Sub Kim, Tae Yong Song, Seon-Jung Ra, and Cheol-Soo Park
+    venue: Building Simulation 2023, 1433–1438
+    year: 2023
+    doi: https://doi.org/10.26868/25222708.2023.1176
+    selected: true
+  - title: Limitations of Conventional Artificial Neural Network-Based Surrogate Models for Building Energy Retrofit
+    authors: Chul-Hong Park, Young-Sub Kim, Seon-Jung Ra, Tae Yong Song, and Cheol-Soo Park
+    venue: ASHRAE Annual Conference, 683–690
+    year: 2023
+    selected: false
 projects:
   - title: Physics-Embedded Thermal Modeling
     summary: Hybrid models that connect RC thermal dynamics with neural networks.
-    description: First-principles equations provide an interpretable thermal backbone, while neural networks learn parameters and residual structure from limited measurements. The broader goal is dependable prediction beyond the conditions represented in training data.
+    description: First-principles equations provide an interpretable thermal backbone, while neural networks learn parameters from limited measurements.
     related_url: /publications/
-
   - title: Data-Efficient Building Models
     summary: Transfer learning and model adaptation under scarce building data.
-    description: This work studies how knowledge learned from one building or operating condition can support modeling in another while preserving physical plausibility.
+    description: Knowledge learned from one building supports modeling in another while preserving physical plausibility.
     related_url: /publications/
-
   - title: Causal Models for Retrofit Decisions
     summary: Simplified models for transparent and robust building-energy decisions.
-    description: This research examines whether simplified, causality-aware models can preserve the relationships and sensitivities that matter for building-energy retrofit decisions.
+    description: Causality-aware models preserve relationships that matter for retrofit decisions.
     related_url: /publications/
-
 honors: []
-
 activities:
   - category: Research Presentations
     items:
-      - title: SimBuild 2024
-        year: 2024
-        description: Physics-informed hybrid modeling for room-temperature prediction using an RC model and Siamese neural network.
-      - title: Building Simulation 2023
-        year: 2023
-        description: Causality-based modeling for building-energy retrofit decisions.
-      - title: ASHRAE Annual Conference
-        year: 2023
-        description: Limitations of conventional ANN-based surrogate models for building-energy retrofit.
+      - { title: SimBuild 2024, year: 2024, description: "Physics-informed hybrid modeling for room-temperature prediction." }
+      - { title: Building Simulation 2023, year: 2023, description: "Causality-based modeling for building-energy retrofit decisions." }
+      - { title: ASHRAE Annual Conference, year: 2023, description: "Limitations of conventional ANN-based surrogate models." }
