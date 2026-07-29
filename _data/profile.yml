@@ -9,7 +9,7 @@ identity:
   cv_pdf: /assets/pdf/taeyong_song_cv.pdf
 links:
   - { label: CV, url: /cv/ }
-  - { label: Google Scholar, url: "https://scholar.google.com/citations?view_op=search_authors&mauthors=Tae+Yong+Song+Seoul+National+University" }
+  - { label: Google Scholar, url: "https://scholar.google.com/citations?hl=ko&user=0S4eAMwAAAAJ" }
   - { label: LinkedIn, url: "https://www.linkedin.com/search/results/people/?keywords=Tae%20Yong%20Song%20Seoul%20National%20University" }
 about:
   - I am a Ph.D. student in the Department of Architecture and Architectural Engineering at Seoul National University. My research sits at the intersection of building physics, building performance simulation, and artificial intelligence.
