@@ -17,6 +17,10 @@ education:
     institution: Seoul National University
     period: 2022–2023
     description: "Thesis: Exploring Potential of Transfer Learning in Overcoming Data Scarcity for Building Energy Model"
+  - degree: B.S. in Architecture and Architectural Engineering
+    institution: Seoul National University
+    period: 2015–2021
+    description: Graduated in 2021
 
 publications:
   - title: Physics-embedded hybrid modelling approach for room temperature prediction using Siamese neural network and RC model
