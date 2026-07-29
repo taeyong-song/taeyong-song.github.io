@@ -52,6 +52,11 @@
                 & {\small\color{slate}#3}
   \end{tabularx}\par
 }
+\newcommand{\singleentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}@{\hspace{8pt}}X@{}}
+    \cvdate{#1} & #2
+  \end{tabularx}\par
+}
 \newcommand{\publication}[3]{%
   \begin{tabularx}{\textwidth}{@{}p{0.055\textwidth}@{\hspace{7pt}}X@{}}
     \cvdate{#1} & #2\\[-1pt]
@@ -92,9 +97,8 @@ I study building intelligence at the intersection of building physics, performan
 \entry{2022--2023}
   {\textbf{M.S. in Engineering}, Seoul National University}
   {Thesis: ``Exploring Potential of Transfer Learning in Overcoming Data Scarcity for Building Energy Model''}
-\entry{2015--2021}
+\singleentry{2015--2021}
   {\textbf{B.S. in Architecture and Architectural Engineering}, Seoul National University}
-  {Graduated in 2021}
 
 \section{Publications}
 \textbf{\color{slate}International Journal Article}
