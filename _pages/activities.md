@@ -3,7 +3,7 @@ layout: page
 title: activities
 permalink: /activities/
 description: Research presentations, service, and academic activities.
-nav: true
+nav: false
 nav_order: 5
 ---
 
