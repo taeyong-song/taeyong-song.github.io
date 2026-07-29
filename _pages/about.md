@@ -50,19 +50,10 @@ My project portfolio includes building-energy digital twins, automated BEM workf
 
 {% endfor %}
 
-## Activities & honors
+## Teaching
 
 {% for group in profile.activities %}
-### {{ group.category }}
 {% for item in group.items %}
-{% if group.category == "Research Presentations" %}
-- {{ item.authors_html }} ({{ item.year }}). **{{ item.title }}**. *{{ item.venue }}*, {{ item.details }}.{% if item.award %} <strong style="color:#b26a00;">{{ item.award }}</strong>{% endif %}
-{% else %}
 - **{{ item.year }} — {{ item.title }}:** {{ item.description }}
-{% endif %}
 {% endfor %}
-{% endfor %}
-
-{% for honor in profile.honors %}
-- **{{ honor.year }} — {% if honor.certificate_url %}[{{ honor.title }}]({{ honor.certificate_url }}){% else %}{{ honor.title }}{% endif %}**{% if honor.organization %}, {{ honor.organization }}{% endif %}
 {% endfor %}

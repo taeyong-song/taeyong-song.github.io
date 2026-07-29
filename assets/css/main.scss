@@ -216,6 +216,49 @@
   font-style: normal;
 }
 
+/* Honors */
+.honors-list {
+  margin-top: 2rem;
+  border-top: 2px solid var(--global-text-color);
+}
+
+.honor-record {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.honor-record__year {
+  color: var(--global-text-color-light);
+  font-family: $monospace;
+  font-size: 0.82rem;
+}
+
+.honor-record__title {
+  margin: 0 0 0.35rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.08rem;
+}
+
+.honor-record__proceedings {
+  margin: 0 0 0.65rem !important;
+  color: var(--global-text-color-light);
+  font-size: 0.88rem !important;
+}
+
+.honor-record__pdf {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 3px;
+  font-family: $monospace;
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
 .publication-category--empty {
   margin-bottom: 2.5rem;
   opacity: 0.65;

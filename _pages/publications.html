@@ -43,7 +43,7 @@ author_profile: true
             {% endif %}
           </h3>
           <p class="publication-record__authors">{{ publication.authors | replace: "Tae Yong Song", "<strong>Tae Yong Song</strong>" | replace: "Song, T. Y.", "<strong>Song, T. Y.</strong>" | replace: "송태용", "<strong>송태용</strong>" }}</p>
-          <p class="publication-record__venue">{{ publication.venue }}{% if publication.award %} <strong class="publication-record__award">{{ publication.award }}</strong>{% endif %}</p>
+          <p class="publication-record__venue">{{ publication.venue }}</p>
         </div>
       </article>
       {% endfor %}
