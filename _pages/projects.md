@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Research themes and ongoing work.
-nav: true
+nav: false
 nav_order: 3
 ---
 
