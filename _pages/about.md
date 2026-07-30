@@ -40,7 +40,7 @@ My work connects **physical knowledge** with **data-driven learning** so that bu
 
 My project portfolio includes building-energy digital twins, automated BEM workflows, causal net-zero design evaluation, green-remodeling diagnostics, and HVAC prediction and control.
 
-[View all research projects →](/research-projects/)
+[View all research projects](/research-projects/)
 
 ## Education
 
