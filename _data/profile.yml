@@ -12,11 +12,12 @@ education:
   - degree: Ph.D. in Architecture and Architectural Engineering
     institution: Seoul National University
     period: 2026.03–present
-    description: "Building Simulation Lab (BS Lab) · Advisor: Professor Cheol-Soo Park"
+    advisor: Prof. Cheol-Soo Park
   - degree: M.S. in Architecture and Architectural Engineering
     institution: Seoul National University
     period: 2022.03–2024.02
-    description: "Thesis: Exploring Potential of Transfer Learning in Overcoming Data Scarcity for Building Energy Model"
+    advisor: Prof. Cheol-Soo Park
+    thesis: Exploring Potential of Transfer Learning in Overcoming Data Scarcity for Building Energy Model
   - degree: B.S. in Architecture and Architectural Engineering
     institution: Seoul National University
     period: 2015.03–2022.02

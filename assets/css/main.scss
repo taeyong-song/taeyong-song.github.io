@@ -120,6 +120,21 @@
   }
 }
 
+/* Use the desktop canvas more efficiently while preserving readable line lengths. */
+@media screen and (min-width: 1024px) {
+  #main > .page {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .masthead__inner-wrap,
+  #main,
+  .page__footer footer {
+    max-width: 1440px;
+  }
+}
+
 .author__scholar-icon {
   display: inline-block;
   width: 1.25em;

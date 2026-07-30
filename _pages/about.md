@@ -46,7 +46,8 @@ My project portfolio includes building-energy digital twins, automated BEM workf
 
 {% for item in profile.education %}
 **{{ item.degree }}**, {{ item.institution }}  
-{{ item.period }} · {{ item.description }}
+{{ item.period }}{% if item.advisor %} · Advisor: {{ item.advisor }}{% endif %}<br>
+{% if item.thesis %}Thesis: {{ item.thesis }}{% endif %}
 
 {% endfor %}
 
