@@ -175,9 +175,10 @@
   align-self: start;
   margin-top: 0.12rem;
   padding: 0.24rem 0.35rem;
+  border: 1px solid var(--global-border-color);
   border-radius: 3px;
   background: var(--global-code-background-color);
-  color: var(--global-text-color-light);
+  color: var(--global-code-text-color);
   font-family: $monospace;
   font-size: 0.72rem;
   text-align: center;
@@ -344,10 +345,12 @@
 
 .research-project-record__year {
   padding: 0.2rem 0.42rem;
+  border: 1px solid var(--global-border-color);
   border-radius: 3px;
   background: var(--global-code-background-color);
-  color: var(--global-text-color);
+  color: var(--global-code-text-color);
   font-family: $monospace;
+  font-weight: 600;
 }
 
 .research-project-record__title {
