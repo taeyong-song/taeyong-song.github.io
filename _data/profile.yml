@@ -80,7 +80,7 @@ publications:
 projects:
   - title: Virtual Building Modeling and Simulation Framework, and a Causality-Based AR Tool for Net-Zero Building Design Evaluation
     sort_date: 2026-03-01
-    period: 2026.03–2030.12
+    period: 2026.03–present
     sponsor: Korea Institute of Civil Engineering and Building Technology (KICT)
     summary: Building a virtual-building simulation framework and causal evaluation workflows for net-zero design.
     description: Contributing to model and simulation framework development, causal performance evaluation logic, and workflows for communicating design outcomes through an AR-based interface.
