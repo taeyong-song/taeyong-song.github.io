@@ -143,6 +143,29 @@
   vertical-align: -0.2em;
 }
 
+/* Research interests: concise, Scholar-style keyword blocks. */
+.page__content .research-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 2.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.page__content .research-keyword {
+  margin: 0;
+  padding: 0.5rem 0.8rem 0.5rem 0.95rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 3px;
+  background: var(--global-bg-color);
+  box-shadow: inset 3px 0 0 var(--global-text-color);
+  color: var(--global-text-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 /* Publications: clear category → record → metadata hierarchy */
 .publication-groups {
   margin-top: 2.25rem;

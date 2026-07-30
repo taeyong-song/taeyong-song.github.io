@@ -20,9 +20,11 @@ My work connects **physical knowledge** with **data-driven learning** so that bu
 
 ### Research interests
 
+<ul class="research-keywords" aria-label="Research interests">
 {% for interest in profile.research_interests %}
-- {{ interest }}
+  <li class="research-keyword">{{ interest }}</li>
 {% endfor %}
+</ul>
 
 ## Selected publications
 
