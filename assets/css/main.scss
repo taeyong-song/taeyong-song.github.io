@@ -184,30 +184,37 @@
 }
 
 .publication-record__title {
-  margin: 0 0 0.55rem;
-  font-size: 1.03rem;
-  font-weight: 500;
-  line-height: 1.42;
+  margin: 0 0 0.38rem;
+  color: var(--global-text-color);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.34;
 }
 
 .publication-record__title a {
-  font-weight: 500;
+  color: var(--global-text-color);
+  font-weight: 600;
   text-decoration: none;
 }
 
+.publication-record__title a:hover {
+  color: var(--global-link-color);
+}
+
 .publication-record__authors {
-  margin: 0 0 0.35rem !important;
+  margin: 0 0 0.18rem !important;
   color: var(--global-text-color);
-  font-size: 0.88rem !important;
-  line-height: 1.55;
+  font-size: 0.87rem !important;
+  line-height: 1.48;
 }
 
 .publication-record__venue {
   margin: 0 !important;
-  color: var(--global-text-color-light);
-  font-size: 0.84rem !important;
+  color: var(--global-text-color);
+  font-size: 0.82rem !important;
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.42;
+  opacity: 0.72;
 }
 
 .publication-record__award {
