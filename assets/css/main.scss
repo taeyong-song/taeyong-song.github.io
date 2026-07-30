@@ -120,18 +120,12 @@
   }
 }
 
-.author__urls a.author__scholar-link {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
 .author__scholar-icon {
-  flex: 0 0 1.25em;
+  display: inline-block;
   width: 1.25em;
   height: 1.25em;
-  margin: 0;
-  object-fit: contain;
+  background: url("{{ '/images/google-scholar-icon.png' | relative_url }}") center / contain no-repeat;
+  vertical-align: -0.2em;
 }
 
 /* Publications: clear category → record → metadata hierarchy */
