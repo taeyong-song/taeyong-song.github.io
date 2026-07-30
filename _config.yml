@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Tae Yong Song"
 title_separator          : "-"
 name                     : &name "Tae Yong Song"
-description              : &description "Academic website of Tae Yong Song, Ph.D. student in Building Science at Seoul National University."
+description              : &description "Academic website of Tae Yong Song, Ph.D. student in the Building Simulation Lab at Seoul National University."
 url                      : https://taeyong-song.github.io
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Tae Yong Song"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student in the Department of Architecture and Architectural Engineering at Seoul National University (SNU)."
+  bio              : "Ph.D. student in the Building Simulation Lab (BS Lab), Department of Architecture and Architectural Engineering at Seoul National University."
   location         :
   employer         :
   uri              : # URL
@@ -144,7 +144,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : "tae-yong-song-og.png"
-og_description           : "Tae Yong Song — Ph.D. student in Building Science at Seoul National University."
+og_description           : "Tae Yong Song — Ph.D. student in the Building Simulation Lab at Seoul National University."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
