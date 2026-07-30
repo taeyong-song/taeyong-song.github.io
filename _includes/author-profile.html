@@ -45,7 +45,11 @@
         <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
       {% endif %}      
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}">Google Scholar</a></li>
+        <li>
+          <a href="{{ author.googlescholar }}">
+            <img class="author__scholar-icon" src="{{ '/images/google-scholar-icon.png' | relative_url }}" alt="" aria-hidden="true">Google Scholar
+          </a>
+        </li>
       {% endif %}
       {% if author.inspire-hep %}
         <li><a href="{{ author.inspire-hep }}"><i class="ai ai-inspire ai-fw icon-pad-right"></i>INSPIRE-HEP</a></li>

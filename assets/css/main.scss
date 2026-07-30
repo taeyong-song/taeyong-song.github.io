@@ -120,6 +120,14 @@
   }
 }
 
+.author__scholar-icon {
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 1em;
+  object-fit: contain;
+  vertical-align: -0.2em;
+}
+
 /* Publications: clear category → record → metadata hierarchy */
 .publication-groups {
   margin-top: 2.25rem;
