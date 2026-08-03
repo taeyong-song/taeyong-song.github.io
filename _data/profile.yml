@@ -1,3 +1,17 @@
+cv:
+  name: Tae Yong Song
+  headline: Ph.D. Student in Building Science
+  affiliation:
+    - Building Simulation Lab (BS Lab)
+    - Department of Architecture and Architectural Engineering, Seoul National University
+  website: https://taeyong-song.github.io
+  google_scholar: https://scholar.google.com/citations?hl=ko&user=0S4eAMwAAAAJ
+  github: https://github.com/taeyong-song
+  linkedin: https://www.linkedin.com/search/results/people/?keywords=Tae%20Yong%20Song%20Seoul%20National%20University
+  self_names:
+    - Tae Yong Song
+    - 송태용
+
 about:
   - I am a Ph.D. student in the Building Simulation Lab (BS Lab) at Seoul National University (SNU), advised by Professor Cheol-Soo Park. My research sits at the intersection of building physics, building performance simulation, and artificial intelligence.
   - I am interested in developing physically meaningful and transferable models grounded in data across building systems, performance, and operations.
@@ -69,6 +83,10 @@ publications:
   - title: "BIM to BEM 자동화를 위한 맞춤형 AI 기술 개발: LLM, 컴퓨터 비전, 들루네 기하 알고리즘, 최소순환 알고리즘 통합"
     authors: 송태용, 김진홍, 김수경, 박현철, 김경재, 박철수
     venue: 대한건축학회 춘계학술발표대회논문집, 제46권 제1호, pp. 829–830 (2 pages), 2026년 4월 28–30일, AT센터, 서울
+    cv_title: "Development of Customized AI Technologies for BIM-to-BEM Automation: Integration of LLMs, Computer Vision, Delaunay Geometry Algorithms, and Minimum Cycle Algorithms"
+    cv_authors: Tae Yong Song, Jin-Hong Kim, Soo-Kyung Kim, Hyun-Chul Park, Kyung-Jae Kim, and Cheol-Soo Park
+    cv_venue: Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea, 46(1), 829–830
+    award: Outstanding Presentation Award
     year: 2026
     selected: false
     category: domestic_conference
@@ -77,6 +95,9 @@ publications:
   - title: NODE-GAM을 통한 동적 민감도 분석
     authors: 송태용, 박철홍, 라선중, 김영섭, 박철수
     venue: 한국건축친환경설비학회 추계학술발표대회 논문집, pp. 181–182, 2022년 11월 25일, 연세대학교, 서울
+    cv_title: Dynamic Sensitivity Analysis Using NODE-GAM
+    cv_authors: Tae Yong Song, Chul-Hong Park, Seon-Jung Ra, Young-Sub Kim, and Cheol-Soo Park
+    cv_venue: Proceedings of the 2022 Annual Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 181–182
     year: 2022
     selected: false
     category: domestic_conference

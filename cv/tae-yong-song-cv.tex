@@ -1,3 +1,5 @@
+% AUTO-GENERATED from _data/profile.yml by scripts/build_cv.py.
+% Edit profile.yml or the .template.tex file, not this generated file.
 \documentclass[10pt,a4paper]{article}
 
 \usepackage[margin=18mm,top=15mm,bottom=16mm]{geometry}
@@ -13,14 +15,9 @@
 \usepackage{ragged2e}
 \usepackage{setspace}
 
-\setmainfont[
-  Path=C:/Windows/Fonts/,
-  UprightFont=times.ttf,
-  BoldFont=timesbd.ttf,
-  ItalicFont=timesi.ttf,
-  BoldItalicFont=timesbi.ttf
-]{Times New Roman}
-\newfontfamily\koreanfont{Batang}
+\IfFontExistsTF{Times New Roman}
+  {\setmainfont{Times New Roman}}
+  {\setmainfont{TeX Gyre Termes}}
 
 \definecolor{navy}{HTML}{000000}
 \definecolor{slate}{HTML}{000000}
@@ -77,12 +74,7 @@
   {\normalsize Ph.D. Student in Building Science}\\[2pt]
   {\small Building Simulation Lab (BS Lab)}\\[1pt]
   {\small Department of Architecture and Architectural Engineering, Seoul National University}\\[4pt]
-  {\small
-    \href{https://taeyong-song.github.io}{Website}\enspace|\enspace
-    \href{https://scholar.google.com/citations?hl=ko\&user=0S4eAMwAAAAJ}{Google Scholar}\enspace|\enspace
-    \href{https://github.com/taeyong-song}{GitHub}\enspace|\enspace
-    \href{https://www.linkedin.com/search/results/people/?keywords=Tae\%20Yong\%20Song\%20Seoul\%20National\%20University}{LinkedIn}
-  }
+  {\small \href{\detokenize{https://taeyong-song.github.io}}{Website}\enspace|\enspace\href{\detokenize{https://scholar.google.com/citations?hl=ko&user=0S4eAMwAAAAJ}}{Google Scholar}\enspace|\enspace\href{\detokenize{https://github.com/taeyong-song}}{GitHub}\enspace|\enspace\href{\detokenize{https://www.linkedin.com/search/results/people/?keywords=Tae%20Yong%20Song%20Seoul%20National%20University}}{LinkedIn}}
 \end{center}
 
 \vspace{1pt}
@@ -95,87 +87,73 @@
   {Advisor: Prof. Cheol-Soo Park}
 \entry{2022.03--2024.02}
   {\textbf{M.S. in Architecture and Architectural Engineering}, Seoul National University}
-  {Advisor: Prof. Cheol-Soo Park\newline
-   Thesis: ``Exploring Potential of Transfer Learning in Overcoming Data Scarcity for Building Energy Model''}
+  {Advisor: Prof. Cheol-Soo Park\newline Thesis: ``Exploring Potential of Transfer Learning in Overcoming Data Scarcity for Building Energy Model''}
 \singleentry{2015.03--2022.02}
   {\textbf{B.S. in Architecture and Architectural Engineering}, Seoul National University}
 
 \section{Publications}
-\textbf{\color{slate}International Journal Article}
-
+\textbf{\color{slate}International Journal Articles}\par\vspace{2pt}
 \publication{2025}
-  {\href{https://doi.org/10.1080/19401493.2025.2542352}{Physics-embedded hybrid modelling approach for room temperature prediction using Siamese neural network and RC model}}
-  {Chul-Hong Park, Seongkwon Cho, \textbf{Tae Yong Song}, Seon-Young Heo, Junu Lee, and Cheol-Soo Park. \textit{Journal of Building Performance Simulation}, 19(2), 277--288. Published online 5 August 2025; issue dated 2026.}
-
+  {\href{\detokenize{https://doi.org/10.1080/19401493.2025.2542352}}{Physics-embedded hybrid modelling approach for room temperature prediction using Siamese neural network and RC model}}
+  {Chul-Hong Park, Seongkwon Cho, \textbf{Tae Yong Song}, Seon-Young Heo, Junu Lee, and Cheol-Soo Park. \textit{Journal of Building Performance Simulation, 19(2), 277--288}.}
 \vspace{2pt}
-\textbf{\color{slate}International Conference Papers}
-
+\textbf{\color{slate}International Conference Papers}\par\vspace{2pt}
 \publication{2026}
   {Curated Intelligence for Visual Inference and Deterministic Logic toward Automatic BEM}
-  {\textbf{Tae Yong Song}, Jin-Hong Kim, Seung-Ju Lee, Soo-Kyung Kim, Hyun-Chul Park, Kyung-Jae Kim, and Cheol-Soo Park. \textit{Proceedings of the 7th Building Simulation Applications Conference}, June 24--26, Bozen-Bolzano, Italy.}
-
+  {\textbf{Tae Yong Song}, Jin-Hong Kim, Seung-Ju Lee, Soo-Kyung Kim, Hyun-Chul Park, Kyung-Jae Kim, and Cheol-Soo Park. \textit{Proceedings of the 7th Building Simulation Applications Conference, pp. ??--??, June 24--26, Bozen-Bolzano, Italy}.}
 \publication{2024}
-  {\href{https://scholar.google.com/citations?view_op=view_citation\&hl=ko\&user=0S4eAMwAAAAJ\&citation_for_view=0S4eAMwAAAAJ:9yKSN-GCB0IC}{Physics-Informed Hybrid Modeling Approach for Room Temperature Prediction Using an RC Model and Siamese Neural Network}}
+  {\href{\detokenize{https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:9yKSN-GCB0IC}}{Physics-Informed Hybrid Modeling Approach for Room Temperature Prediction Using an RC Model and Siamese Neural Network}}
   {Chul-Hong Park, Seongkwon Cho, \textbf{Tae Yong Song}, Seon-Young Heo, and Cheol-Soo Park. \textit{SimBuild 2024}.}
-
 \publication{2023}
-  {\href{https://doi.org/10.26868/25222708.2023.1176}{Causality-based model for decision-making of building energy retrofit}}
-  {Chul-Hong Park, Young-Sub Kim, \textbf{Tae Yong Song}, Seon-Jung Ra, and Cheol-Soo Park. \textit{Building Simulation 2023}, 1433--1438.}
-
+  {\href{\detokenize{https://doi.org/10.26868/25222708.2023.1176}}{Causality-based model for decision-making of building energy retrofit}}
+  {Chul-Hong Park, Young-Sub Kim, \textbf{Tae Yong Song}, Seon-Jung Ra, and Cheol-Soo Park. \textit{Building Simulation 2023, 1433--1438}.}
 \publication{2023}
-  {\href{https://scholar.google.com/citations?view_op=view_citation\&hl=ko\&user=0S4eAMwAAAAJ\&citation_for_view=0S4eAMwAAAAJ:u5HHmVD_uO8C}{Limitations of Conventional Artificial Neural Network-Based Surrogate Models for Building Energy Retrofit}}
-  {Chul-Hong Park, Young-Sub Kim, Seon-Jung Ra, \textbf{Tae Yong Song}, and Cheol-Soo Park. \textit{ASHRAE Annual Conference}, 683--690.}
-
-\textbf{\color{slate}Domestic Conference Papers}
-
+  {\href{\detokenize{https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:u5HHmVD_uO8C}}{Limitations of Conventional Artificial Neural Network-Based Surrogate Models for Building Energy Retrofit}}
+  {Chul-Hong Park, Young-Sub Kim, Seon-Jung Ra, \textbf{Tae Yong Song}, and Cheol-Soo Park. \textit{ASHRAE Annual Conference, 683--690}.}
+\vspace{2pt}
+\textbf{\color{slate}Domestic Conference Papers}\par\vspace{2pt}
 \publication{2026}
-  {Development of Customized AI Technologies for BIM-to-BEM Automation: Integration of LLMs, Computer Vision, Delaunay Geometry Algorithms, and Minimum Cycle Algorithms}
-  {\textbf{Tae Yong Song}, Jin-Hong Kim, Soo-Kyung Kim, Hyun-Chul Park, Kyung-Jae Kim, and Cheol-Soo Park. \textit{Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea}, 46(1), 829--830. \textbf{Outstanding Presentation Award.}}
-
+  {\href{\detokenize{https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:u-x6o8ySG0sC}}{Development of Customized AI Technologies for BIM-to-BEM Automation: Integration of LLMs, Computer Vision, Delaunay Geometry Algorithms, and Minimum Cycle Algorithms}}
+  {\textbf{Tae Yong Song}, Jin-Hong Kim, Soo-Kyung Kim, Hyun-Chul Park, Kyung-Jae Kim, and Cheol-Soo Park. \textit{Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea, 46(1), 829--830}. \textbf{Outstanding Presentation Award.}}
 \publication{2022}
   {Dynamic Sensitivity Analysis Using NODE-GAM}
-  {\textbf{Tae Yong Song}, Chul-Hong Park, Seon-Jung Ra, Young-Sub Kim, and Cheol-Soo Park. \textit{Proceedings of the 2022 Annual Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems}, 181--182.}
+  {\textbf{Tae Yong Song}, Chul-Hong Park, Seon-Jung Ra, Young-Sub Kim, and Cheol-Soo Park. \textit{Proceedings of the 2022 Annual Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, 181--182}.}
 
 \newpage
 \section{Research Projects}
 \project{2026.03--present}
   {Virtual Building Modeling and Simulation Framework, and a Causality-Based AR Tool for Net-Zero Building Design Evaluation}
   {Korea Institute of Civil Engineering and Building Technology (KICT)}
-
-\project{2025.10--2026.04}
-  {LLM Technology for Digital-Twin-Based Building Energy Models}
-  {Samsung Electronics}
-
 \project{2025.12--2026.01}
   {IDF Model Development for Digital-Twin Energy Simulation}
   {Eterion (Samsung Electronics)}
-
+\project{2025.10--2026.04}
+  {LLM Technology for Digital-Twin-Based Building Energy Models}
+  {Samsung Electronics}
+\project{2023.05--2023.11}
+  {Data-Driven HVAC Load Prediction and Optimal Air-Handling-Unit Control}
+  {LG Electronics}
+\project{2022.12--2023.07}
+  {Greenhouse-Gas Reduction Factors and Emissions Assessment for Building Green Remodeling}
+  {Ministry of Land, Infrastructure and Transport (MOLIT)}
 \project{2022.04--2024.12}
   {Automated Digital Diagnosis and Design Technologies for Green Remodeling}
   {Korea Agency for Infrastructure Technology Advancement (KAIA)}
 
-\project{2023.05--2023.11}
-  {Data-Driven HVAC Load Prediction and Optimal Air-Handling-Unit Control}
-  {LG Electronics}
-
-\project{2022.12--2023.07}
-  {Greenhouse-Gas Reduction Factors and Emissions Assessment for Building Green Remodeling}
-  {Ministry of Land, Infrastructure and Transport (MOLIT)}
-
 \section{Teaching Experience}
 \entry{2026--present}
   {\textbf{Teaching Assistant}, Seoul National University}
-  {Department of Architecture and Architectural Engineering}
+  {Department of Architecture and Architectural Engineering, Seoul National University.}
 \entry{2023.03--2024.02}
   {\textbf{Teaching Assistant}, Seoul National University}
-  {Department of Architecture and Architectural Engineering}
+  {Department of Architecture and Architectural Engineering, Seoul National University.}
 
-\section{Honor}
+\section{Honors}
 \entry{2026}
-  {\href{https://taeyong-song.github.io/files/honors/2026-outstanding-presentation-award.pdf}{\textbf{Outstanding Presentation Award}}}
-  {Architectural Institute of Korea Spring Annual Conference, Oral Presentation -- General Division}
+  {\href{\detokenize{https://taeyong-song.github.io/files/honors/2026-outstanding-presentation-award.pdf}}{\textbf{Outstanding Presentation Award}}}
+  {Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea, Vol. 46, No. 1}
 
 \vfill
-{\footnotesize\color{slate}Last updated: July 2026 \hfill Full publication details and project updates: \href{https://taeyong-song.github.io}{taeyong-song.github.io}}
+{\footnotesize\color{slate}Last updated: August 2026 \hfill Full publication details and project updates: \href{\detokenize{https://taeyong-song.github.io}}{taeyong-song.github.io}}
 
 \end{document}
