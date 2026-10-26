@@ -10,7 +10,7 @@ author_profile: true
 <div class="honors-list">
 {% for honor in profile.honors %}
   <article class="honor-record">
-    <div class="honor-record__year">{{ honor.year }}</div>
+    <div class="honor-record__year">{{ honor.date | default: honor.year }}</div>
     <div>
       <h2 class="honor-record__title">{{ honor.title }}</h2>
       <p class="honor-record__proceedings">{{ honor.proceedings }}</p>

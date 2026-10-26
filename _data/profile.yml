@@ -88,9 +88,23 @@ publications:
     cv_venue: Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea, 46(1), 829–830
     award: Outstanding Presentation Award
     year: 2026
+    date: "2026.04.28"
     selected: false
     category: domestic_conference
     scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:u-x6o8ySG0sC
+
+  - title: 제한적 센서 환경에서 건물 물리 정보들과 RC 네트워크를 결합한 디퓨전
+    authors: 송태용, 박철수
+    venue: 한국건축친환경설비학회 2026 추계학술발표대회, 2026년 10월 2일
+    cv_title: Diffusion Models Integrating Building Physics Information and RC Networks under Limited Sensor Availability
+    cv_authors: Tae Yong Song and Cheol-Soo Park
+    cv_venue: 2026 Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, October 2, 2026
+    award: 우수논문발표상
+    cv_award: Best Paper Presentation Award
+    year: 2026
+    date: "2026.10.02"
+    selected: false
+    category: domestic_conference
 
   - title: NODE-GAM을 통한 동적 민감도 분석
     authors: 송태용, 박철홍, 라선중, 김영섭, 박철수
@@ -153,6 +167,12 @@ projects:
 
 honors:
   - year: 2026
+    date: "2026.10.02"
+    title: Best Paper Presentation Award
+    proceedings: 2026 Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems — Diffusion Models Integrating Building Physics Information and RC Networks under Limited Sensor Availability
+
+  - year: 2026
+    date: "2026.04.28"
     title: Outstanding Presentation Award
     proceedings: Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea, Vol. 46, No. 1
     certificate_url: /files/honors/2026-outstanding-presentation-award.pdf

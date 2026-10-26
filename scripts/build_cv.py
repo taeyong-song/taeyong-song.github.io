@@ -140,7 +140,10 @@ def render_publications(entries: list[dict], self_names: list[str]) -> str:
         category_entries = [item for item in entries if item.get("category") == category]
         if not category_entries:
             continue
-        category_entries.sort(key=lambda item: int(item.get("year", 0)), reverse=True)
+        category_entries.sort(
+            key=lambda item: str(item.get("date") or item.get("year", "")),
+            reverse=True,
+        )
         blocks.append(
             rf"\textbf{{\color{{slate}}{tex_escape(label)}}}\par\vspace{{2pt}}"
         )
@@ -151,8 +154,9 @@ def render_publications(entries: list[dict], self_names: list[str]) -> str:
             authors = bold_self(item.get("cv_authors") or item.get("authors"), self_names)
             venue = tex_escape(item.get("cv_venue") or item.get("venue")).rstrip(".")
             details = f"{authors}. \\textit{{{venue}}}."
-            if item.get("award"):
-                details += rf" \textbf{{{tex_escape(item['award'])}.}}"
+            award = item.get("cv_award") or item.get("award")
+            if award:
+                details += rf" \textbf{{{tex_escape(award)}.}}"
             blocks.append(
                 rf"\publication{{{tex_escape(item.get('year'))}}}" + "\n"
                 rf"  {{{title}}}" + "\n"
@@ -194,13 +198,17 @@ def render_activities(groups: list[dict]) -> str:
 
 def render_honors(entries: list[dict], website: str) -> str:
     blocks = [r"\section{Honors}"]
-    for item in sorted(entries, key=lambda row: int(row.get("year", 0)), reverse=True):
+    for item in sorted(
+        entries,
+        key=lambda row: str(row.get("date") or row.get("year", "")),
+        reverse=True,
+    ):
         certificate = str(item.get("certificate_url") or "")
         if certificate.startswith("/"):
             certificate = website.rstrip("/") + certificate
         title = href(certificate, rf"\textbf{{{tex_escape(item.get('title'))}}}")
         blocks.append(
-            rf"\entry{{{tex_escape(item.get('year'))}}}" + "\n"
+            rf"\entry{{{tex_escape(item.get('date') or item.get('year'))}}}" + "\n"
             rf"  {{{title}}}" + "\n"
             rf"  {{{tex_escape(item.get('proceedings'))}}}"
         )
