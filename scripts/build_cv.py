@@ -206,11 +206,14 @@ def render_honors(entries: list[dict], website: str) -> str:
         certificate = str(item.get("certificate_url") or "")
         if certificate.startswith("/"):
             certificate = website.rstrip("/") + certificate
-        title = href(certificate, rf"\textbf{{{tex_escape(item.get('title'))}}}")
+        title = href(
+            certificate,
+            rf"\textbf{{{tex_escape(item.get('cv_title') or item.get('title'))}}}",
+        )
         blocks.append(
             rf"\entry{{{tex_escape(item.get('date') or item.get('year'))}}}" + "\n"
             rf"  {{{title}}}" + "\n"
-            rf"  {{{tex_escape(item.get('proceedings'))}}}"
+            rf"  {{{tex_escape(item.get('cv_proceedings') or item.get('proceedings'))}}}"
         )
     return "\n".join(blocks)
 

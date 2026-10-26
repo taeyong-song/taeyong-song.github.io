@@ -86,19 +86,20 @@ publications:
     cv_title: "Development of Customized AI Technologies for BIM-to-BEM Automation: Integration of LLMs, Computer Vision, Delaunay Geometry Algorithms, and Minimum Cycle Algorithms"
     cv_authors: Tae Yong Song, Jin-Hong Kim, Soo-Kyung Kim, Hyun-Chul Park, Kyung-Jae Kim, and Cheol-Soo Park
     cv_venue: Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea, 46(1), 829–830
-    award: Outstanding Presentation Award
+    award: 우수발표논문상
+    cv_award: Outstanding Presentation Paper Award
     year: 2026
     date: "2026.04.28"
     selected: false
     category: domestic_conference
     scholar_url: https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=0S4eAMwAAAAJ&citation_for_view=0S4eAMwAAAAJ:u-x6o8ySG0sC
 
-  - title: 제한적 센서 환경에서 건물 물리 정보들과 RC 네트워크를 결합한 디퓨전
+  - title: 제한적 센서 환경에서 건물 물리 정보들과 RC 네트워크를 결합한 디퓨전 모델의 개별 공조기 전력 소비량 추정
     authors: 송태용, 박철수
-    venue: 한국건축친환경설비학회 2026 추계학술발표대회, 2026년 10월 2일
-    cv_title: Diffusion Models Integrating Building Physics Information and RC Networks under Limited Sensor Availability
+    venue: 한국건축친환경설비학회 추계학술발표대회 논문집, pp. 57–58, 2026년 10월 2일, 송도 컨벤시아, 인천
+    cv_title: Individual Air-Conditioner Power Consumption Estimation Using a Diffusion Model Integrating Building Physics Information and an RC Network under Limited Sensor Availability
     cv_authors: Tae Yong Song and Cheol-Soo Park
-    cv_venue: 2026 Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, October 2, 2026
+    cv_venue: Proceedings of the 2026 Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems, pp. 57–58, October 2, 2026, Songdo Convensia, Incheon
     award: 우수논문발표상
     cv_award: Best Paper Presentation Award
     year: 2026
@@ -168,13 +169,17 @@ projects:
 honors:
   - year: 2026
     date: "2026.10.02"
-    title: Best Paper Presentation Award
-    proceedings: 2026 Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems — Diffusion Models Integrating Building Physics Information and RC Networks under Limited Sensor Availability
+    title: 우수논문발표상
+    cv_title: Best Paper Presentation Award
+    proceedings: 한국건축친환경설비학회 2026 추계학술발표대회 — 제한적 센서 환경에서 건물 물리 정보들과 RC 네트워크를 결합한 디퓨전 모델의 개별 공조기 전력 소비량 추정
+    cv_proceedings: 2026 Fall Conference of the Korean Institute of Architectural Sustainable Environment and Building Systems — Individual Air-Conditioner Power Consumption Estimation Using a Diffusion Model Integrating Building Physics Information and an RC Network under Limited Sensor Availability
 
   - year: 2026
     date: "2026.04.28"
-    title: Outstanding Presentation Award
-    proceedings: Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea, Vol. 46, No. 1
+    title: 우수발표논문상
+    cv_title: Outstanding Presentation Paper Award
+    proceedings: 대한건축학회 2026 춘계학술발표대회논문집, 제46권 제1호
+    cv_proceedings: Proceedings of the 2026 Spring Annual Conference of the Architectural Institute of Korea, Vol. 46, No. 1
     certificate_url: /files/honors/2026-outstanding-presentation-award.pdf
 
 activities:
